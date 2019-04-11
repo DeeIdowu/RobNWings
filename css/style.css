@@ -29,27 +29,6 @@ body {
     font-family: 'Rickon';
 }
 
-h1{
-    font-family: 'Rickon';
-    color: red;
-    font-size: 60px;
-    display: inline-block;
-}
-
-p{
-    font-family: 'Rickon';
-    color: red;
-    font-size: 35px;
-    display: inline-block;
-}
-
-p{
-    font-family: 'Rickon';
-    color: red;
-    font-size: 25px;
-    display: inline-block;
-
-}
 
 .btn-xl {
     padding: 1rem 2rem; 
@@ -62,7 +41,7 @@ p{
   }
   
   .btn-primary:hover {
-    background-color: #f34e4e;
+    background-color: #dd4141;
     border-color: white;
     border-width: 5px;
     cursor: pointer;
@@ -72,22 +51,25 @@ p{
   /*icons*/
 
 .social {
-    justify-content: center;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 50%;
 }
 
+
+/*icons*/
 .row {
-    justify-content: center;
-    display: flex;
+    display:flex;
     border-radius: 50%;
-    
 }
 
-.column{
-    justify-content: center;
+.column {
     flex: .25%;
     padding: 0px;
     border-radius: 50%;
 }
+
 
 /*font*/
 @font-face{
@@ -95,4 +77,24 @@ p{
     src: url('/fonts/Rickon.ttf');
     font-weight: normal;
     font-style: normal;
+}
+
+/*Media queries */
+@media only screen and (max-width: 980px){
+   #connect {
+       max-width: 100%;
+   }
+}
+@media only screen and (max-width: 768px){
+    #connect {
+        max-width: 100%;
+    }
+
+
+}
+@media only screen and (max-width: 640px){
+    #connect {
+        max-width: 100%;
+    }
+
 }
