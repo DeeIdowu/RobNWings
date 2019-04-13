@@ -60,7 +60,6 @@ h2 {
 }
 
 .mission-statement{
-    height: 300px;
     width: 100%;
     padding: 100px 0 20px 0;
     background-color: #b22222;
@@ -69,3 +68,153 @@ h2 {
     background-image: -webkit-linear-gradient(bottom, #b22222 0%, #dc143c 0.27%, #ff0000 99.46%, #fff 100%);
     background-image: linear-gradient(bottom, #b22222 0%, #dc143c 0.27%, #ff0000 99.46%, #fff 100%);
 }
+
+
+/*		Testimonials section 		*/
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #f1f1f1f1;
+  }
+  
+  /* Slides */
+  .carousel {
+    display: none;
+    padding: 80px;
+    text-align: center;
+    background: #fff;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+  }
+  
+  /* The dots/bullets/indicators */
+  .period {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Add an italic font style to all quotes */
+  q {font-style: italic;}
+  
+  /* Add a blue color to the author */
+  .author {color: cornflowerblue;}
+  
+
+.testomonials{
+    width: 100%;
+    padding: 100px 0 20px 0;
+    background-color: white;
+}
+
+
+
+.footer {
+    width: 100%;
+    padding: 100px 0 20px 0;
+    background-color: #b22222;
+    background-image: -moz-linear-gradient(bottom, #b22222 0%, #dc143c 0.27%, #ff0000 99.46%, #fff 100%);
+    background-image: -o-linear-gradient(bottom, #b22222 0%, #dc143c 0.27%, #ff0000 99.46%, #fff 100%);
+    background-image: -webkit-linear-gradient(bottom, #b22222 0%, #dc143c 0.27%, #ff0000 99.46%, #fff 100%);
+    background-image: linear-gradient(bottom, #b22222 0%, #dc143c 0.27%, #ff0000 99.46%, #fff 100%);
+
+}
+
+
+/*logo centering in footer*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+   /*icons*/
+
+.social {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    border-radius: 50%;
+ }
+ 
+ 
+ /*icons*/
+ .row {
+     display:flex;
+     border-radius: 50%;
+ }
+ 
+ .column {
+     flex: .25%;
+     padding: 0px;
+     border-radius: 50%;
+ }
+ 
+
+
+/*links*/
+/* unvisited link */
+a:link {
+    color: #fff;
+  }
+  
+  /* visited link */
+  a:visited {
+    color:#fff;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #fff;
+  }
+  
+  /* selected link */
+  a:active {
+    color:#fff;
+  }
