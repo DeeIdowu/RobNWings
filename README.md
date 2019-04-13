@@ -1,3 +1,3 @@
 # RobNWings
-webpage for cleint
+webpage for client
 Coming soon...
