@@ -6,13 +6,24 @@ html {
 }
 
 body {
-    background-image: url('/images/logo2.PNG');
-    background-size: cover;
-    background-size: 100%;
-    background-attachment: fixed;
-    background-position: center;
+   background-color: black;
 }
 /*end of background/body segment*/
+
+/*font*/
+/*font*/
+@font-face{
+    font-family: 'Rickon';
+    src: url('/fonts/Rickon.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*styling h1*/
+h1{
+    font-family: 'Rickon';
+    color: #fff;
+}
 
 /*banner */
 .banner {
@@ -26,7 +37,32 @@ body {
     background-image: -o-linear-gradient(bottom, #b22222 0%, #dc143c 0.27%, #ff0000 99.46%, #fff 100%);
     background-image: -webkit-linear-gradient(bottom, #b22222 0%, #dc143c 0.27%, #ff0000 99.46%, #fff 100%);
     background-image: linear-gradient(bottom, #b22222 0%, #dc143c 0.27%, #ff0000 99.46%, #fff 100%);
-   
+}
 
 
+.carousel {
+    height: 300px;
+    width: 100%;
+    padding: 100px 0 20px 0;
+    background-color: black;
+    color: black;
+}
+
+
+.about {
+    height: 300px;
+    width: 100%;
+	padding: 100px 0 20px 0;
+    background-color:  #fff;
+}
+
+.mission-statement{
+    height: 300px;
+    width: 100%;
+    padding: 100px 0 20px 0;
+    background-color: #b22222;
+    background-image: -moz-linear-gradient(bottom, #b22222 0%, #dc143c 0.27%, #ff0000 99.46%, #fff 100%);
+    background-image: -o-linear-gradient(bottom, #b22222 0%, #dc143c 0.27%, #ff0000 99.46%, #fff 100%);
+    background-image: -webkit-linear-gradient(bottom, #b22222 0%, #dc143c 0.27%, #ff0000 99.46%, #fff 100%);
+    background-image: linear-gradient(bottom, #b22222 0%, #dc143c 0.27%, #ff0000 99.46%, #fff 100%);
 }

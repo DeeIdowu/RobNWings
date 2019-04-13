@@ -18,6 +18,13 @@
     <div class="banner">
 
         <!--Nav Bar-->
+
+        <div id="main">
+                <!-- <h1 style="color:#f1f1f1;">RobNWings</h1>
+                  <p style="color:#f1f1f1">Welcome to Rob-N-Wings home of the infamous SouthSide Sauce </p> -->
+                 <span style="font-size:30px;cursor:pointer;color:#f1f1f1;" onclick="openNav()">&#9776;</span>
+         </div>
+
     <style>
             body {
               font-family: "Lato", sans-serif;
@@ -98,92 +105,11 @@
             </script>
 
     </div>
+    <!--End of Nav Bar-->
     <!-- End of Banner-->
 
-    <!--Nav Bar-->
-    <style>
-            body {
-              font-family: "Lato", sans-serif;
-              transition: background-color .5s;
-            }
-            
-            .sidenav {
-              height: 100%;
-              width: 0;
-              position: fixed;
-              z-index: 1;
-              top: 0;
-              left: 0;
-              background-color: #b22222;
-              background-image: -moz-linear-gradient(bottom, #b22222 0%, #dc143c 0.27%, #ff0000 99.46%, #fff 100%);
-              background-image: -o-linear-gradient(bottom, #b22222 0%, #dc143c 0.27%, #ff0000 99.46%, #fff 100%);
-              background-image: -webkit-linear-gradient(bottom, #b22222 0%, #dc143c 0.27%, #ff0000 99.46%, #fff 100%);
-              background-image: linear-gradient(bottom, #b22222 0%, #dc143c 0.27%, #ff0000 99.46%, #fff 100%);
-              overflow-x: hidden;
-              transition: 0.5s;
-              padding-top: 60px;
-            }
-            
-            .sidenav a {
-              padding: 8px 8px 8px 32px;
-              text-decoration: none;
-              font-size: 25px;
-              color: #fcf8f8;
-              display: block;
-              transition: 0.3s;
-            }
-            
-            .sidenav a:hover {
-              color: #f1f1f1;
-            }
-            
-            .sidenav .closebtn {
-              position: absolute;
-              top: 0;
-              right: 25px;
-              font-size: 36px;
-              margin-left: 50px;
-            }
-            
-            #main {
-              transition: margin-left .5s;
-              padding: 16px;
-            }
-            
-            @media screen and (max-height: 450px) {
-              .sidenav {padding-top: 15px;}
-              .sidenav a {font-size: 18px;}
-            }
-            </style>
-           
-            
-            <div id="mySidenav" class="sidenav">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              <a href="index.html">Home</a>
-              <a href="menu.html">Menu</a>
-              <a href="bookings.html">Bookings</a>
-              <a href="contact.html">Contact</a>
-            </div>
-           
-     
-            <script>
-            function openNav() {
-              document.getElementById("mySidenav").style.width = "250px";
-              document.getElementById("main").style.marginLeft = "250px";
-              document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-            }
-            
-            function closeNav() {
-              document.getElementById("mySidenav").style.width = "0";
-              document.getElementById("main").style.marginLeft= "0";
-              document.body.style.backgroundColor = "white";
-            }
-            </script>
-            
-            
-    <!-- End of Nav Bar-->
-
     <!--Carousel-->
+    <div id="carousel">
     <style>
             * {box-sizing: border-box;}
             body {font-family: Verdana, sans-serif;}
@@ -192,7 +118,7 @@
             
             /* Slideshow container */
             .slideshow-container {
-              max-width: 950px;
+              max-width: 100%;
               position: relative;
               margin: auto;
             }
@@ -261,26 +187,26 @@
             <div class="slideshow-container">
             
             <div class="mySlides fade">
-              <div class="numbertext">1 / 3</div>
-              <img src="images/tray4.JPG" style="height:300px; width: 950px;">
+              <div class="numbertext">1 / 4</div>
+              <img src="images/tray4.JPG" style="height:350px; width: 100%;">
               <div class="text">Wings</div>
             </div>
             
             <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
-              <img src="images/fries2.JPG" style="height:300px; width: 950px;">
+              <div class="numbertext">2 / 4</div>
+              <img src="images/fries2.JPG" style="height:350px; width: 100%;">
               <div class="text">Infamous SouthSide Fries</div>
             </div>
             
             <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
-              <img src="images/tray6.JPG" style="height:300px; width: 950px;">
+              <div class="numbertext">3 / 4</div>
+              <img src="images/tray6.JPG" style="height:350px; width: 100%;">
               <div class="text">BBQ Wings</div>
             </div>
             
             <div class="mySlides fade">
                     <div class="numbertext">4/4</div>
-                    <img src="images/tray7.JPG" style="height:300px; width: 950px;">
+                    <img src="images/tray7.JPG" style="height:350px; width: 100%;">
                     <div class="text">Southside Wings</div>
                   </div>
             </div>
@@ -315,20 +241,33 @@
             }
             </script>
             
-
+        </div>
     <!--End of Carousel-->
 
     <!--About us section-->
+    <section class="about">
+        <div id="about">
+            <h1 style="color: black; text-align: center;">About</h1>
+
+        </div>
+    </section>
      
-    <div id="main">
-           <!-- <h1 style="color:#f1f1f1;">RobNWings</h1>
-             <p style="color:#f1f1f1">Welcome to Rob-N-Wings home of the infamous SouthSide Sauce </p> -->
-            <span style="font-size:30px;cursor:pointer;color:#f1f1f1;" onclick="openNav()">&#9776; Navigation</span>
-    </div>
+   
     <!--End of About us section-->
 
     <!--Mission Statement-->
+    <section class="mission-statement">
+        <div id="mission-statement">
+            <h1 style="color: white; text-align: center;">Mission Statement</h1>
+            <p style="color: white; text-align: center;">
+
+            </p>
+
+        </div>
+    </section>
+
     <!-- End of Mission Statement-->
+
 
     <!--Services-->
     <!--End of Services-->
