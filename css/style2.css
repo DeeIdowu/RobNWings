@@ -6,7 +6,7 @@ html {
 }
 
 body {
-   background-color: black;
+   background-color: #fff;
 }
 /*end of background/body segment*/
 
@@ -21,6 +21,10 @@ body {
 
 /*styling h1*/
 h1{
+    font-family: 'Rickon';
+    color: #fff;
+}
+h2 {
     font-family: 'Rickon';
     color: #fff;
 }
@@ -50,7 +54,6 @@ h1{
 
 
 .about {
-    height: 300px;
     width: 100%;
 	padding: 100px 0 20px 0;
     background-color:  #fff;
