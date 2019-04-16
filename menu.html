@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>RobNWings</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style3.css" />
+  </head>
+  <body>
+    <!--Banner-->
+    <div class="banner">
+      <!--Nav Bar-->
+
+      <div id="main">
+        <!-- <h1 style="color:#f1f1f1;">RobNWings</h1>
+                      <p style="color:#f1f1f1">Welcome to Rob-N-Wings home of the infamous SouthSide Sauce </p> -->
+        <span
+          style="font-size:30px;cursor:pointer;color:#f1f1f1;"
+          onclick="openNav()"
+          >&#9776;</span
+        >
+      </div>
+      <img
+        src="images/logo.PNG"
+        alt="RobNWings"
+        class="center"
+        style="height: 100px; width: 100px; border-radius: 3px; border-color: red;"
+      />
+
+      <style>
+        body {
+          font-family: "Lato", sans-serif;
+          transition: background-color 0.5s;
+        }
+
+        .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #b22222;
+          background-image: -moz-linear-gradient(
+            bottom,
+            #b22222 0%,
+            #dc143c 0.27%,
+            #ff0000 99.46%
+          );
+          background-image: -o-linear-gradient(
+            bottom,
+            #b22222 0%,
+            #dc143c 0.27%,
+            #ff0000 99.46%
+          );
+          background-image: -webkit-linear-gradient(
+            bottom,
+            #b22222 0%,
+            #dc143c 0.27%,
+            #ff0000 99.46%
+          );
+          background-image: linear-gradient(
+            bottom,
+            #b22222 0%,
+            #dc143c 0.27%,
+            #ff0000 99.46%
+          );
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+        }
+
+        .sidenav a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #fcf8f8;
+          display: block;
+          transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+          color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+
+        #main {
+          transition: margin-left 0.5s;
+          padding: 16px;
+        }
+
+        @media screen and (max-height: 450px) {
+          .sidenav {
+            padding-top: 15px;
+          }
+          .sidenav a {
+            font-size: 18px;
+          }
+        }
+      </style>
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="bookings.html">Bookings</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+          document.body.style.backgroundColor = "white";
+        }
+      </script>
+    </div>
+    <!--End of Nav Bar-->
+    <!-- End of Banner-->
+
+    <!--RobNWing SouthSide Sauce Picture-->
+    <div id="header-image">
+      <img
+        src="images/sauce.JPG"
+        alt="SouthSideSauce"
+        style="height: 450px; width: 100%;"
+      />
+      <br />
+      <br />
+      <div class="caption">
+        <h1>Infamous SouthSide Sauce and other sauces are for sale</h1>
+        <p id="underling">Inquire and purchase for your home today!</p>
+      </div>
+    </div>
+    <!--End of RobNWings SouthSide Sauce Picture-->
+    <!--Menu black menu-->
+    <div class="slantedDivA">
+      <div class="content">
+        <h1 style="color:fff; font-size: 50px;">Menu</h1>
+        <div class="rowTwo">
+          <div class="columnOne left">
+            <p>Chicken Wings quantities of 50 pcs and up</p>
+            <p>Chicken Strips quantities of 50 pcs and up</p>
+            <p>Likkle Bits, tray sizes: Medium and Large</p>
+
+            <ul>
+              Available Sauces:
+              <li>SouthSide Sauce</li>
+              <li>Dirty South</li>
+              <li>IG Honey</li>
+              <li>Bishop Brew</li>
+              <li>BBQ</li>
+              <li>Lemon Pepper (Wet or Dry)</li>
+              <li>Chipotle Mango</li>
+              <li>Super Southside (Hot)</li>
+            </ul>
+          </div>
+          <div class="columnOne middle">
+            <ul>
+              Bottle Sauces for sale:
+            </ul>
+            <li>Southside Sauce</li>
+            <li>Dirty South Sauce</li>
+            <li>IG Honey Sauce</li>
+            <li>Bishop Brew</li>
+          </div>
+          <div class="columnOne right"></div>
+          <ul>
+            Additions/Sides:
+          </ul>
+          <li>SouthSide Chicken Wrap</li>
+          <li>French Fries</li>
+          <li>SouthSide Caesar Fries</li>
+          <li>SouthSide Chicken Sandwich</li>
+          <li>SouthSide Chicken Sliders</li>
+        </div>
+      </div>
+    </div>
+
+    <!--End of Menu-->
+    <!--Footer-->
+    <section class="footer">
+      <div id="footer">
+        <img
+          src="images/logo.PNG"
+          alt="RobNWings"
+          class="center"
+          style="height: 100px; width: 100px;"
+        />
+        <br />
+        <br />
+        <div class="social">
+          <div class="row">
+            <div class="column">
+              <a href="https://instagram.com/RobNWings"
+                ><img
+                  src="/images/instagram-icon.png"
+                  style="border-radius: 45%; height: 50px; width: 50px;"
+              /></a>
+            </div>
+            <div class="column">
+              <a href="https://www.facebook.com/531364073911268"
+                ><img
+                  src="/images/facebook-icon.png"
+                  style="border-radius:45%; height: 50px; width: 50px;"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <p style="color: white; text-align: center;">
+          &copy Copyright 2019 Designed By
+          <a href="https://affluentdev.io">Affluent Developments</a>
+        </p>
+      </div>
+    </section>
+    <!--End of Footer-->
+
+    <script src="" async defer></script>
+  </body>
+</html>
