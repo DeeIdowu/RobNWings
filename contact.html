@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>RobNWings</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style4.css" />
+  </head>
+  <body>
+    <!--Banner-->
+    <div class="banner">
+      <!--Nav Bar-->
+
+      <div id="main">
+        <!-- <h1 style="color:#f1f1f1;">RobNWings</h1>
+                      <p style="color:#f1f1f1">Welcome to Rob-N-Wings home of the infamous SouthSide Sauce </p> -->
+        <span
+          style="font-size:30px;cursor:pointer;color:#f1f1f1;"
+          onclick="openNav()"
+          >&#9776;</span
+        >
+      </div>
+      <img
+        src="images/logo.PNG"
+        alt="RobNWings"
+        class="center"
+        style="height: 100px; width: 100px; border-radius: 3px; border-color: red;"
+      />
+
+      <style>
+        body {
+          font-family: "Lato", sans-serif;
+          transition: background-color 0.5s;
+        }
+
+        .sidenav {
+          height: 100%;
+          width: 0;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #b22222;
+          background-image: -moz-linear-gradient(
+            bottom,
+            #b22222 0%,
+            #dc143c 0.27%,
+            #ff0000 99.46%
+          );
+          background-image: -o-linear-gradient(
+            bottom,
+            #b22222 0%,
+            #dc143c 0.27%,
+            #ff0000 99.46%
+          );
+          background-image: -webkit-linear-gradient(
+            bottom,
+            #b22222 0%,
+            #dc143c 0.27%,
+            #ff0000 99.46%
+          );
+          background-image: linear-gradient(
+            bottom,
+            #b22222 0%,
+            #dc143c 0.27%,
+            #ff0000 99.46%
+          );
+          overflow-x: hidden;
+          transition: 0.5s;
+          padding-top: 60px;
+        }
+
+        .sidenav a {
+          padding: 8px 8px 8px 32px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #fcf8f8;
+          display: block;
+          transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+          color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+          position: absolute;
+          top: 0;
+          right: 25px;
+          font-size: 36px;
+          margin-left: 50px;
+        }
+
+        #main {
+          transition: margin-left 0.5s;
+          padding: 16px;
+        }
+
+        @media screen and (max-height: 450px) {
+          .sidenav {
+            padding-top: 15px;
+          }
+          .sidenav a {
+            font-size: 18px;
+          }
+        }
+      </style>
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="bookings.html">Bookings</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+          document.body.style.backgroundColor = "white";
+        }
+      </script>
+    </div>
+    <!--End of Nav Bar-->
+    <!-- End of Banner-->
+
+    <!--RobNWing Logo Placement-->
+    <div id="main-container" class="containerOne">
+      <section class="main-section">
+        <img src="images/logo.PNG" alt="SouthSideSauce" class="auth-image" />
+        <h1 style="color: black; font-size: 40px;">
+          Contact us! We'd love for more feedback and inquiries regarding
+          bookings, and orders!
+        </h1>
+        <p style="color: black; font-famiy: 'Rickon';">
+          Feel free to fill out the form below and have your name, number, email
+          in the body the message for a response back
+        </p>
+      </section>
+    </div>
+    <!--End of RobNWings Logo Placement-->
+    <!--Postmail placement background black-->
+    <section class="contact-section">
+      <h1 style="font-size: 50px;">Contact Us:</h1>
+      <form action="https://postmail.invotes.com/send" method="post" id="form">
+        <input type="text" name="subject" placeholder="Subject" />
+        <br />
+        <br />
+        <textarea name="text" placeholder="Message"></textarea>
+        <input
+          type="hidden"
+          name="access_token"
+          value="m4x90rvpf417tloyeokh78ru"
+        />
+        <!-- return urls can be fully qualified -OR-
+                 start with / for root relative -OR-
+                 start with . for url relative -->
+        <input
+          type="hidden"
+          name="success_url"
+          value=".?message=Email+Successfully+Sent%21&isError=0"
+        />
+        <input
+          type="hidden"
+          name="error_url"
+          value=".?message=Email+could+not+be+sent.&isError=1"
+        />
+        <br />
+        <br />
+        <input id="submit_form" type="submit" value="Send" />
+        <!-- not required, but we'd appreciate it if you'd link to us somewhere on your site -->
+      </form>
+
+      <!-- optional, prevents the submit button from being pressed more than once -->
+      <script>
+        var submitButton = document.getElementById("submit_form");
+        var form = document.getElementById("email_form");
+        form.addEventListener("submit", function(e) {
+          setTimeout(function() {
+            submitButton.value = "Sending...";
+            submitButton.disabled = true;
+          }, 1);
+        });
+      </script>
+
+      <script>
+        //update this with your js_form selector
+        var form_id_js = "javascript_form";
+
+        var data_js = {
+          access_token: "m4x90rvpf417tloyeokh78ru"
+        };
+
+        function js_onSuccess() {
+          // remove this to avoid redirect
+          window.location =
+            window.location.pathname +
+            "?message=Email+Successfully+Sent%21&isError=0";
+        }
+
+        function js_onError(error) {
+          // remove this to avoid redirect
+          window.location =
+            window.location.pathname +
+            "?message=Email+could+not+be+sent.&isError=1";
+        }
+
+        var sendButton = document.getElementById("js_send");
+
+        function js_send() {
+          sendButton.value = "Sending…";
+          sendButton.disabled = true;
+          var request = new XMLHttpRequest();
+          request.onreadystatechange = function() {
+            if (request.readyState == 4 && request.status == 200) {
+              js_onSuccess();
+            } else if (request.readyState == 4) {
+              js_onError(request.response);
+            }
+          };
+
+          var subject = document.querySelector(
+            "#" + form_id_js + " [name='subject']"
+          ).value;
+          var message = document.querySelector(
+            "#" + form_id_js + " [name='text']"
+          ).value;
+          data_js["subject"] = subject;
+          data_js["text"] = message;
+          var params = toParams(data_js);
+
+          request.open("POST", "https://postmail.invotes.com/send", true);
+          request.setRequestHeader(
+            "Content-type",
+            "application/x-www-form-urlencoded"
+          );
+
+          request.send(params);
+
+          return false;
+        }
+
+        sendButton.onclick = js_send;
+
+        function toParams(data_js) {
+          var form_data = [];
+          for (var key in data_js) {
+            form_data.push(
+              encodeURIComponent(key) + "=" + encodeURIComponent(data_js[key])
+            );
+          }
+
+          return form_data.join("&");
+        }
+
+        var js_form = document.getElementById(form_id_js);
+        js_form.addEventListener("submit", function(e) {
+          e.preventDefault();
+        });
+      </script>
+    </section>
+
+    <!--End of Postmail-->
+    <!--Footer-->
+    <section class="footer">
+      <div id="footer">
+        <img
+          src="images/logo.PNG"
+          alt="RobNWings"
+          class="center"
+          style="height: 100px; width: 100px;"
+        />
+        <br />
+        <br />
+        <div class="social">
+          <div class="row">
+            <div class="column">
+              <a href="https://instagram.com/RobNWings"
+                ><img
+                  src="/images/instagram-icon.png"
+                  style="border-radius: 45%; height: 50px; width: 50px;"
+              /></a>
+            </div>
+            <div class="column">
+              <a href="https://www.facebook.com/531364073911268"
+                ><img
+                  src="/images/facebook-icon.png"
+                  style="border-radius:45%; height: 50px; width: 50px;"
+              /></a>
+            </div>
+            <div class="column">
+              <a href="https://www.twitter.com/RobNWings"
+                ><img
+                  src="/images/twitter-icon.png"
+                  style="border-radius:45%; height: 50px; width: 50px;"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <p style="color: white; text-align: center;">
+          &copy Copyright 2019 Designed By
+          <a href="https://affluentdev.io">Affluent Developments</a>
+        </p>
+      </div>
+    </section>
+    <!--End of Footer-->
+
+    <script src="" async defer></script>
+  </body>
+</html>
